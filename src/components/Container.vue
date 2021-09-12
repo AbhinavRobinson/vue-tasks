@@ -25,6 +25,7 @@ defineProps<{
   padding: 10px 15px;
   max-width: 400px;
   width: 90%;
+  gap: 5px;
 
   border: 1px solid #ddd;
   border-radius: 5px;

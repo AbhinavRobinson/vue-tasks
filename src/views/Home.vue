@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Container title="Vue Tasks">
-      <Tasklist />
+      <Tasklist :tasks="[{ id: 0, title: `task 0` }]" />
     </Container>
   </div>
 </template>
