@@ -1,11 +1,3 @@
-<script lang="ts" setup>
-import { defineProps } from "vue";
-
-defineProps<{
-  title: string;
-}>();
-</script>
-
 <template>
   <div class="container-bordered">
     <div class="header">
@@ -14,8 +6,17 @@ defineProps<{
       </h1>
       <button>Add Tasks</button>
     </div>
+    <slot />
   </div>
 </template>
+
+<script lang="ts" setup>
+import { defineProps } from "vue";
+
+defineProps<{
+  title: string;
+}>();
+</script>
 
 <style lang="scss" scoped>
 .container-bordered {
