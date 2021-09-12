@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <Container title="Vue Tasks">
-      <Tasklist :tasks="[{ id: 0, title: `task 0` }]" />
+      <Tasklist
+        :tasks="[{ id: 0, title: `Complete this app!`, completed: true }]"
+      />
     </Container>
   </div>
 </template>

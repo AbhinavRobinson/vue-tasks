@@ -47,10 +47,12 @@ defineProps<{
       border-radius: 5px;
       background-color: transparent;
       text-transform: uppercase;
-      transition-duration: 300ms;
+      transition-duration: 100ms;
+      cursor: pointer;
       &:hover {
-        cursor: pointer;
-        box-shadow: 0 2px 5px #86e9bc77;
+        background: #42b983;
+        color: white;
+        border: 1px solid #42b983;
       }
     }
   }

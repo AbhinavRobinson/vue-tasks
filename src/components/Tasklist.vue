@@ -3,10 +3,16 @@
     <div class="no-tasks" v-if="tasks === undefined || tasks.length < 1">
       No Tasks, Add One 👻
     </div>
-    <div class="task" v-for="task in tasks" :key="task.id">
+    <div
+      class="task"
+      v-for="task in tasks"
+      :key="task.id"
+      :style="task.completed ? { borderLeft: '5px solid #42b983' } : {}"
+    >
       <div class="task-title">
         {{ task.title }}
       </div>
+      <div class="close-button" />
     </div>
   </div>
 </template>
@@ -48,8 +54,24 @@ defineProps<Props>();
     padding: 0.5rem;
     border-radius: 0.25rem;
     width: calc(100% - 20px);
+    position: relative;
     .task-title {
       font-weight: bold;
+    }
+    .close-button {
+      border-radius: 100%;
+      background: tomato;
+      cursor: pointer;
+      width: 7.5px;
+      height: 7.5px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      transition-duration: 300ms;
+      &:hover {
+        transform: scale(1.2);
+        background-color: red;
+      }
     }
   }
 }
