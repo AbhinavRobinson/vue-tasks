@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <div class="home">
     <h1>About this project</h1>
