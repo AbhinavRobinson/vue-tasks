@@ -67,9 +67,11 @@ defineProps<Props>();
       position: absolute;
       top: 5px;
       right: 5px;
-      transition-duration: 300ms;
+      transition-duration: 100ms;
+      // Increase target size
+      border: 2.5px solid white;
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.25);
         background-color: red;
       }
     }
