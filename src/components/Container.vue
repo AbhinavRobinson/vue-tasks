@@ -2,7 +2,7 @@
   <div class="container-bordered">
     <div class="header">
       <h1 class="title">
-        {{ $props.title }}
+        {{ title }}
       </h1>
       <button>Add Tasks</button>
     </div>
