@@ -12,7 +12,7 @@
       <div class="task-title">
         {{ task.title }}
       </div>
-      <div class="close-button" />
+      <div class="delete-button" />
     </div>
   </div>
 </template>
@@ -58,7 +58,7 @@ defineProps<Props>();
     .task-title {
       font-weight: bold;
     }
-    .close-button {
+    .delete-button {
       border-radius: 100%;
       background: tomato;
       cursor: pointer;
